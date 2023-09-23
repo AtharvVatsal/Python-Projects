@@ -1,16 +1,16 @@
-import math
+import math         #imported math module for use in complex calculations
 
-def add(a, b):
-    return a + b
-def sub(a, b):
+def add(a, b):      #defined function fo addition
+    return a + b    
+def sub(a, b):      #defined function for substraction
     return a - b
-def mul(a, b):
+def mul(a, b):      #defined function for multiplication
     return a*b
-def div(a, b):
+def div(a, b):      #defined function for division
     return a/b
-def exp(a, b):
+def exp(a, b):      #defined function for exponent of 2 number
     return a**b
-def remain(a, b):
+def remain(a, b):   #defined function for finding remainder
     return a%b
 
 user = int(input("""
@@ -109,7 +109,7 @@ while user == 7:
         elif tf == 4:
             if units == 'd':
                 angle = math.radians(angle)
-                cosec = (1/math.sin(angle))
+                cosec = (1/math.sin(angle))     #cosec = 1/sin
                 print(f"Cosec = {cosec}")
                 break
             else:
@@ -119,7 +119,7 @@ while user == 7:
         elif tf == 5:
             if units == 'd':
                 angle = math.radian(angle)
-                sec = (1/math.cos(angle))
+                sec = (1/math.cos(angle))       #sec = 1/cos
                 print(f"Secant = {sec}")
                 break
             else:
@@ -129,18 +129,18 @@ while user == 7:
         elif tf == 6:
             if units == 'd':
                 angle = math.radians(angle)
-                cot =(1/math.tan(angle))
+                cot =(1/math.tan(angle))        #cot = 1/tan
                 print(f"COt = {cot}") 
                 break     
     elif choice == 3:
         num = float(input("Enter Your Number "))
-        expo = math.exp(num)
+        expo = math.exp(num)                                    #e^(number)
         print(f"e raised to given number = {expo}")
         break
     elif choice == 4:
         num = float(input("Enter Number of Your Choice "))
-        loga = math.log(x)
-        print(f"Log of given number to base e = {loga}")
+        loga = math.log(x)                                     #log(x)
+        print(f"Log of given number to base e = {loga}")        #  e
         break
     elif choice == 5:
         num = float(input("Enter Number of Your Choice "))
@@ -148,5 +148,7 @@ while user == 7:
         print(f"Rouned Value = {abso}")
         break
     else:
-        print("Invalid Input")
+        print("Invalid Input ,Re-run Program")
         break
+else:
+     print("Invalid Input, Re-Run Program")
