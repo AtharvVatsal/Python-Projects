@@ -19,6 +19,10 @@ if choice == 1:
             print("TOO LOW!")
         else:
             print("TOO HIGH")
+            while taken > count:
+                dig = dig
+                print(f"The Number was {dig}")
+                break
 elif choice == 2:
     count = 7
     taken = 0
@@ -33,8 +37,10 @@ elif choice == 2:
             print("TOO LOW!")
         else:
             print("TOO HIGH")
-    while taken == count:
-        print(f"The Number was {dig}")
+            while taken > count:
+                dig = dig
+                print(f"The Number was {dig}")
+                break
 elif choice == 3:
     count = 7
     taken = 0
@@ -49,5 +55,9 @@ elif choice == 3:
             print("TOO LOW!")
         else:
             print("TOO HIGH")
+            while taken > count:
+                dig = dig
+                print(f"The Number was {dig}")
+                break
 else:
     print("Invalid Choice, Re-run")
